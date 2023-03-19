@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "amy:amy_essence"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_dye",
+    "count": 1
+  }
+}

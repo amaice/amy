@@ -1,0 +1,46 @@
+{
+  "format_version": "1.19.2",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "amy:amy_entity",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_open_doors": true
+      }
+    },
+    "animation_controllers": {
+      "controller.animation.amy_entity.move": {
+        "initial_state": "moving",
+        "states": {
+          "moving": {
+            "animations": [ { "walk": "query.modified_move_speed" }]
+          },
+          "grazing": {
+            "animations": [ "grazing" ]
+          }
+        },
+        "transitions": [
+          { "grazing": "query.is_grazing" },
+          { "moving": "query.all_animations_finished" }
+        ]
+      }
+    }
+
+    },
+    "animations": {
+      "walk": {
+        "anim_time_update": "query.modified_distance_moved",
+        "loop": true,
+        "bones": {
+          "LeftLeg": { "rotation": [ "Math.cos(query.anim_time * 38.17) *  80.0", 0.0, 0.0 ] },
+          "RightLeg": { "rotation": [ "Math.cos(query.anim_time * 38.17) * -80.0", 0.0, 0.0 ] }
+        }
+      },
+    "look_at_target": "animation.common.look_at_target"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "ilwag_beat":{
+  "sounds": [
+    {
+      "name": "amy:ilwag_beat",
+      "stream:": true
+    }
+  ]
+},
+  "cc_static": {
+    "sounds": [
+      {
+        "name": "amy:cc_static",
+        "stream": true
+      }
+    ]
+  }
+}

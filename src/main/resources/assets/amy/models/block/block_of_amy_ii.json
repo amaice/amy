@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "amy:blocks/block_of_amy_ii"
+  }
+}

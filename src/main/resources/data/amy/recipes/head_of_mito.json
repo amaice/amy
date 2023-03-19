@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "amy:block_of_amy"
+    }
+  },
+  "result": {
+    "item": "amy:head_of_mito"
+  }
+}

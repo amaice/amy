@@ -1,0 +1,23 @@
+{
+  "itemGroup.amy": "Amy",
+  "item.amy.amy_essence": "Amy Essence",
+  "item.amy.hoodie_shreds": "Hoodie Shreds",
+  "item.amy.lakeview_hoodie": "Lakeview Hoodie",
+
+  "block.amy.block_of_amy": "Block of Amy",
+  "block.amy.block_of_amy_ii": "Block of Amy II",
+  "block.amy.block_of_amy_iii": "Block of Amy III",
+  "block.amy.block_of_amy_iv": "Block of Amy IV",
+
+  "block.amy.head_of_mito": "Front of Mito",
+  "block.amy.back_of_mito": "Back of Mito",
+  "block.amy.ears_of_mito": "Head of Mito",
+
+  "entity.amy.amy_entity": "Amy",
+  "entity.amy.mito_entity": "Mito",
+
+  "item.amy.ilwag_beat_music_disc": "Music Disc",
+  "item.amy.ilwag_beat_music_disc.desc": "amaice - ilwag beat",
+  "item.amy.cc_static_music_disc": "Music Disc",
+  "item.amy.cc_static_music_disc.desc": "amaice - cc_static"
+}

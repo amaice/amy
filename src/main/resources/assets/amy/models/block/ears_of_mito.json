@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [180, 180],
+	"textures": {
+		"all": "amy:blocks/ears_of_mito"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#all"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#all"},
+				"south": {"uv": [8, 0, 0, 8], "texture": "#all"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#all"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#all"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#all"}
+			}
+		}
+	]
+}

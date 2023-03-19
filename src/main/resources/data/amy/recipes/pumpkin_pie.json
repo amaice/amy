@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "amy:block_of_amy"
+    },
+    {
+      "item": "amy:amy_essence"
+    },
+    {
+      "item": "amy:amy_essence"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pumpkin_pie",
+    "count": 1
+  }
+}
