@@ -45,7 +45,7 @@ public class BlockInit {
                         @Override
                         public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {
                             super.appendHoverText(stack, level, tooltip, flag);
-                            tooltip.add(Component.literal("Amy's spawn here!"));
+                            new TextComponent("Amy's spawn here!"));
                         }
                     };
                 }

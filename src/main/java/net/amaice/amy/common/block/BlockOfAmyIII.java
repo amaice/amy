@@ -4,7 +4,6 @@ import net.amaice.amy.common.tile.AmySpawnerTile;
 import net.amaice.amy.common.tile.AmySpawnerTileIII;
 import net.amaice.amy.core.init.TileEntityInit;
 import net.minecraft.core.BlockPos;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.SpawnerBlock;
@@ -15,6 +14,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Random;
+
+import java.util.Random;
 public class BlockOfAmyIII extends SpawnerBlock {
     public BlockOfAmyIII(Properties props) {
         super(props);
@@ -22,7 +24,7 @@ public class BlockOfAmyIII extends SpawnerBlock {
 
     // why did i even keep it as a SpawnerBlock, it's just a custom block that works like a SpawnerBlock lmao
     @Override
-    public int getExpDrop(@NotNull BlockState state, @NotNull LevelReader world, @NotNull RandomSource randomSource, @NotNull BlockPos pos, int fortune, int silkTouch) {
+    public int getExpDrop(@NotNull BlockState state, @NotNull LevelReader world, @NotNull Random randomSource, @NotNull BlockPos pos, int fortune, int silkTouch) {
         return 0;
     }
 

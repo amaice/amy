@@ -4,7 +4,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
@@ -31,6 +30,8 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 import software.bernie.geckolib3.util.GeckoLibUtil;
+
+import java.util.Random;
 
 public class AmyEntity extends Animal implements IAnimatable {
     private AnimationFactory factory = GeckoLibUtil.createFactory(this);
@@ -60,7 +61,7 @@ public class AmyEntity extends Animal implements IAnimatable {
                 .add(Attributes.FOLLOW_RANGE, 32.0D);
     }
 
-    public static boolean canSpawn(EntityType<AmyEntity> entityType, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random){
+    public static boolean canSpawn(EntityType<AmyEntity> entityType, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, Random random){
         return checkAnimalSpawnRules(entityType, level, spawnType, pos, random);
     }
 
